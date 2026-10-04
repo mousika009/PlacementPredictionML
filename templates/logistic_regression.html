@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Logistic Regression | PlacementPredict{% endblock %}
+{% block content %}
+<div class="page-heading">
+    <div>
+        <span class="eyebrow">PLACEMENT PREDICT EDA</span>
+        <h2>Logistic Regression</h2>
+        <p>Binary classification of placement outcomes.</p>
+    </div>
+</div>
+
+<section class="card">
+    <div class="card-title"><i class="fa-solid fa-chart-line"></i><h3>Analysis</h3></div>
+    <p>Logistic regression estimates the probability of a student being placed.</p>
+
+    <div class="image-grid"><div class="image-card"><img src="{{ url_for("output_file", folder="logistic_regression", filename="confusion_matrix.png") }}" alt="confusion_matrix.png"><div>confusion_matrix.png</div></div><div class="image-card"><img src="{{ url_for("output_file", folder="logistic_regression", filename="roc_curve.png") }}" alt="roc_curve.png"><div>roc_curve.png</div></div></div>
+</section>
+
+
+{% endblock %}

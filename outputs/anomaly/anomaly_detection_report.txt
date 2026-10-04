@@ -1,0 +1,38 @@
+====================================================
+ANOMALY DETECTION REPORT
+====================================================
+
+Dataset: C:\Users\Mousika\Downloads\PlacementPredict_EDA\PlacementPredict_EDA\data\placement_data.csv
+Number of records: 50000
+Number of features used: 21
+
+ALGORITHMS USED
+----------------------------------------------------
+1. Isolation Forest
+2. Local Outlier Factor (LOF)
+3. One-Class SVM
+
+METHOD RESULTS
+----------------------------------------------------
+Isolation Forest anomalies: 2500
+Isolation Forest normal: 47500
+
+LOF anomalies: 2500
+LOF normal: 47500
+
+One-Class SVM anomalies: 2504
+One-Class SVM normal: 47496
+
+FINAL RESULT
+----------------------------------------------------
+Final anomaly rule: At least 2 of 3 methods must agree.
+
+Final anomalous records: 1800
+Final normal records: 48200
+
+AGREEMENT
+----------------------------------------------------
+0 methods: 44565
+1 method : 3635
+2 methods: 1531
+3 methods: 269

@@ -1,0 +1,10 @@
+t-SNE DIMENSIONALITY REDUCTION REPORT
+=====================================
+
+Dataset Records: 50000
+Records used for t-SNE: 5000
+PCA preprocessing components: 20
+Variance retained before t-SNE: 91.46%
+Output dimensions: 2
+
+The generated plots show the two-dimensional embedding and placement-status view.

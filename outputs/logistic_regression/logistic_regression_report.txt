@@ -1,0 +1,17 @@
+LOGISTIC REGRESSION REPORT
+==========================
+
+Dataset Records: 50000
+Training Records: 40000
+Testing Records: 10000
+
+Target: PlacementStatus
+
+MODEL PERFORMANCE
+-----------------
+Accuracy : 0.9976
+Accuracy Percentage: 99.76%
+
+Classes:
+- Not Placed
+- Placed

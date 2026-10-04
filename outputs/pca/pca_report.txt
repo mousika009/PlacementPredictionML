@@ -1,0 +1,80 @@
+PRINCIPAL COMPONENT ANALYSIS REPORT
+=======================================================
+
+Dataset Shape: (50000, 32)
+Number of Input Features: 20
+
+Features Used:
+- SGPA_Sem1
+- SGPA_Sem2
+- SGPA_Sem3
+- SGPA_Sem4
+- SGPA_Sem5
+- SGPA_Sem6
+- SGPA_Sem7
+- SGPA_Sem8
+- CGPA
+- AttendancePercent
+- Internships
+- Projects
+- Workshops
+- Certifications
+- Publications
+- AptitudeTestScore
+- SoftSkillsRating
+- CodingTestScore
+- MockInterviewScore
+- ExtraCurricular
+
+Variance Explained:
+PC1: 64.25% (Cumulative: 64.25%)
+PC2: 11.85% (Cumulative: 76.10%)
+PC3: 4.45% (Cumulative: 80.55%)
+PC4: 3.27% (Cumulative: 83.82%)
+PC5: 2.68% (Cumulative: 86.49%)
+PC6: 2.39% (Cumulative: 88.89%)
+PC7: 2.02% (Cumulative: 90.91%)
+PC8: 1.84% (Cumulative: 92.75%)
+PC9: 1.72% (Cumulative: 94.46%)
+PC10: 1.56% (Cumulative: 96.02%)
+PC11: 1.34% (Cumulative: 97.36%)
+PC12: 1.15% (Cumulative: 98.51%)
+PC13: 0.32% (Cumulative: 98.82%)
+PC14: 0.18% (Cumulative: 99.01%)
+PC15: 0.18% (Cumulative: 99.19%)
+PC16: 0.17% (Cumulative: 99.36%)
+PC17: 0.17% (Cumulative: 99.53%)
+PC18: 0.16% (Cumulative: 99.69%)
+PC19: 0.16% (Cumulative: 99.85%)
+PC20: 0.15% (Cumulative: 100.00%)
+
+Variance Thresholds:
+80%: 3 components
+90%: 7 components
+95%: 10 components
+
+PC1 + PC2 Variance: 76.10%
+
+Top PC1 Features:
+SGPA_Sem8: 0.2626
+SGPA_Sem7: 0.2615
+SGPA_Sem6: 0.2603
+SGPA_Sem5: 0.2591
+SGPA_Sem4: 0.2578
+SGPA_Sem3: 0.2564
+SGPA_Sem2: 0.2550
+CGPA: 0.2540
+SGPA_Sem1: 0.2533
+MockInterviewScore: 0.2183
+
+Top PC2 Features:
+CodingTestScore: 0.2703
+AptitudeTestScore: 0.2622
+Projects: 0.2585
+Internships: 0.2462
+SGPA_Sem1: -0.2457
+AttendancePercent: 0.2383
+SGPA_Sem2: -0.2368
+Certifications: 0.2337
+MockInterviewScore: 0.2296
+SGPA_Sem3: -0.2291

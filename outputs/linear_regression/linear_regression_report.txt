@@ -1,0 +1,15 @@
+LINEAR REGRESSION REPORT
+========================
+
+Dataset Records: 50000
+Training Records: 40000
+Testing Records: 10000
+
+Target: Salary Package
+
+MODEL PERFORMANCE
+-----------------
+MSE  : 6.7878
+RMSE : 2.6053
+MAE  : 2.0224
+R2   : 0.9131

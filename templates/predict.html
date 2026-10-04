@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Predict Student | PlacementPredict{% endblock %}
+{% block content %}
+<div class="page-heading"><div><span class="eyebrow">PREDICTION</span><h2>Predict Student Placement</h2><p>Enter the student's values to get a simple placement prediction.</p></div></div>
+<section class="card">
+<form method="post" class="predict-form">
+{% for f in features %}
+<label>{{ f }}<input type="number" step="any" name="{{ f }}" required></label>
+{% endfor %}
+<button class="primary-btn" type="submit"><i class="fa-solid fa-crosshairs"></i> Predict</button>
+</form>
+{% if prediction is not none %}
+<div class="prediction {{ 'success' if prediction == 1 else 'danger' }}">
+    <strong>{{ 'Placed' if prediction == 1 else 'Not Placed' }}</strong>
+    <span>Prediction generated successfully.</span>
+</div>
+{% endif %}
+</section>
+{% endblock %}

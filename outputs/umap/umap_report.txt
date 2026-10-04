@@ -1,0 +1,5 @@
+UMAP DIMENSIONALITY REDUCTION REPORT
+====================================
+
+The project contains UMAP two-dimensional projection and parameter-comparison visualizations.
+The output folder contains the generated UMAP plots for the configured neighbour and minimum-distance settings.

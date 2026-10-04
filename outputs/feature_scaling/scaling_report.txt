@@ -1,0 +1,33 @@
+FEATURE SCALING REPORT
+======================
+
+Dataset Records: 50000
+Training Records: 40000
+Testing Records: 10000
+Features Scaled: 20
+Scaling Method: Min-Max Scaling
+
+Formula concept:
+Values are transformed to a range between 0 and 1.
+
+Features:
+- SGPA_Sem1
+- SGPA_Sem2
+- SGPA_Sem3
+- SGPA_Sem4
+- SGPA_Sem5
+- SGPA_Sem6
+- SGPA_Sem7
+- SGPA_Sem8
+- CGPA
+- AttendancePercent
+- Internships
+- Projects
+- Workshops
+- Certifications
+- Publications
+- AptitudeTestScore
+- SoftSkillsRating
+- CodingTestScore
+- MockInterviewScore
+- ExtraCurricular

@@ -1,0 +1,25 @@
+PREPROCESSING REPORT
+====================
+
+Dataset Records: 50000
+Dataset Features: 32
+Training Records: 40000
+Testing Records: 10000
+Numerical Features: 10
+
+IQR OUTLIER HANDLING
+--------------------
+Q1: 0.00
+Q3: 18.41
+IQR: 18.41
+Lower Limit: -27.62
+Upper Limit: 46.03
+Detected Outliers: 0
+Maximum Salary Before: 26.00
+Maximum Salary After: 26.00
+
+SCALING METHODS
+---------------
+1. Min-Max Scaling
+2. Standardization
+3. Robust Scaling

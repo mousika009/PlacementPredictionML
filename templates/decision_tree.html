@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Decision Tree | PlacementPredict{% endblock %}
+{% block content %}
+<div class="page-heading">
+    <div>
+        <span class="eyebrow">PLACEMENT PREDICT EDA</span>
+        <h2>Decision Tree</h2>
+        <p>Tree-based classification for placement prediction.</p>
+    </div>
+</div>
+
+<section class="card">
+    <div class="card-title"><i class="fa-solid fa-chart-line"></i><h3>Analysis</h3></div>
+    <p>The decision tree learns interpretable rules from student features. The tree structure and feature importance are shown below.</p>
+
+    <div class="image-grid"><div class="image-card"><img src="{{ url_for("output_file", folder="decision_tree", filename="decision_tree_structure.png") }}" alt="decision_tree_structure.png"><div>decision_tree_structure.png</div></div><div class="image-card"><img src="{{ url_for("output_file", folder="decision_tree", filename="feature_importance.png") }}" alt="feature_importance.png"><div>feature_importance.png</div></div></div>
+</section>
+
+
+{% endblock %}

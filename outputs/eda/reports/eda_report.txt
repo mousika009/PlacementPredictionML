@@ -1,0 +1,80 @@
+PLACEMENT PREDICTION - EDA REPORT
+==================================================
+
+Dataset Rows: 50000
+Dataset Columns: 32
+
+NUMERIC COLUMNS
+------------------------------
+StudentID
+SGPA_Sem1
+SGPA_Sem2
+SGPA_Sem3
+SGPA_Sem4
+SGPA_Sem5
+SGPA_Sem6
+SGPA_Sem7
+SGPA_Sem8
+CGPA
+AttendancePercent
+Internships
+Projects
+Workshops
+Certifications
+Publications
+AptitudeTestScore
+SoftSkillsRating
+CodingTestScore
+MockInterviewScore
+ExtraCurricular
+PlacementStatus
+IsAnomaly
+Salary Package
+
+CATEGORICAL COLUMNS
+------------------------------
+Gender
+City
+CollegeTier
+Stream
+Specialisation
+Hostel
+HistoryOfBacklogs
+CGPA_Tier
+
+MISSING VALUES
+------------------------------
+
+DUPLICATE ROWS
+------------------------------
+0
+
+DESCRIPTIVE STATISTICS
+------------------------------
+           StudentID Gender       City CollegeTier Stream Specialisation Hostel HistoryOfBacklogs     SGPA_Sem1     SGPA_Sem2     SGPA_Sem3     SGPA_Sem4     SGPA_Sem5     SGPA_Sem6     SGPA_Sem7     SGPA_Sem8          CGPA  AttendancePercent   Internships      Projects     Workshops  Certifications  Publications  AptitudeTestScore  SoftSkillsRating  CodingTestScore  MockInterviewScore  ExtraCurricular CGPA_Tier  PlacementStatus     IsAnomaly  Salary Package
+count   50000.000000  50000      50000       50000  50000          50000  50000             50000  50000.000000  50000.000000  50000.000000  50000.000000  50000.000000  50000.000000  50000.000000  50000.000000  50000.000000       50000.000000  50000.000000  50000.000000  50000.000000    50000.000000  50000.000000       50000.000000      50000.000000     50000.000000        50000.000000     50000.000000     50000     50000.000000  50000.000000    50000.000000
+unique           NaN      2         10           3      6              4      2                 2           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                NaN           NaN           NaN           NaN             NaN           NaN                NaN               NaN              NaN                 NaN              NaN         3              NaN           NaN             NaN
+top              NaN   Male  Hyderabad       Tier2     CS       Embedded    Yes                No           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                NaN           NaN           NaN           NaN             NaN           NaN                NaN               NaN              NaN                 NaN              NaN       Low              NaN           NaN             NaN
+freq             NaN  30133       8114       23315  13937          13614  27785             40893           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN                NaN           NaN           NaN           NaN             NaN           NaN                NaN               NaN              NaN                 NaN              NaN     16733              NaN           NaN             NaN
+mean    25000.500000    NaN        NaN         NaN    NaN            NaN    NaN               NaN      7.210583      7.222243      7.235398      7.247290      7.258639      7.274511      7.282720      7.293704      7.246154          76.709863      1.127740      2.109520      1.822020        1.931420      0.735460          68.943124          3.157440        57.428458           55.338286         0.533000       NaN         0.657120      0.035000        9.536119
+std     14433.901067    NaN        NaN         NaN    NaN            NaN    NaN               NaN      1.517846      1.532008      1.551632      1.570629      1.587829      1.603261      1.621605      1.638112      1.615686          12.474386      0.813631      1.207607      0.990173        1.175391      0.717167          14.735874          0.946171        20.345848           16.632269         0.498915       NaN         0.474677      0.183782        8.824561
+min         1.000000    NaN        NaN         NaN    NaN            NaN    NaN               NaN      4.000000      4.000000      4.000000      4.000000      4.000000      4.000000      4.000000      4.000000      4.000000          50.000000      0.000000      0.000000      0.000000        0.000000      0.000000          30.000000          1.000000         0.000000           15.900000         0.000000       NaN         0.000000      0.000000        0.000000
+25%     12500.750000    NaN        NaN         NaN    NaN            NaN    NaN               NaN      6.090000      6.090000      6.080000      6.070000      6.070000      6.080000      6.060000      6.060000      6.040000          67.600000      1.000000      1.000000      1.000000        1.000000      0.000000          60.000000          2.500000        47.300000           45.900000         0.000000       NaN         0.000000      0.000000        0.000000
+50%     25000.500000    NaN        NaN         NaN    NaN            NaN    NaN               NaN      7.190000      7.210000      7.220000      7.240000      7.260000      7.280000      7.300000      7.310000      7.250000          77.200000      1.000000      2.000000      2.000000        2.000000      1.000000          69.900000          3.200000        57.700000           54.700000         1.000000       NaN         1.000000      0.000000        8.430000
+75%     37500.250000    NaN        NaN         NaN    NaN            NaN    NaN               NaN      8.340000      8.360000      8.400000      8.430000      8.460000      8.500000      8.520000      8.560000      8.480000          85.900000      2.000000      3.000000      2.000000        3.000000      1.000000          78.700000          3.800000        72.000000           67.200000         1.000000       NaN         1.000000      0.000000       18.410000
+max     50000.000000    NaN        NaN         NaN    NaN            NaN    NaN               NaN     10.000000     10.000000     10.000000     10.000000     10.000000     10.000000     10.000000     10.000000     10.000000         100.000000      3.000000      5.000000      4.000000        5.000000      3.000000         100.000000          5.000000       100.000000          100.000000         1.000000       NaN         1.000000      1.000000       26.000000
+
+GENERATED PLOTS
+------------------------------
+aptitude_score_distribution.png
+attendance_distribution.png
+attendance_vs_placement.png
+cgpa_distribution.png
+cgpa_vs_placement.png
+coding_score_distribution.png
+correlation_heatmap.png
+internships_vs_placement.png
+placement_status_distribution.png
+projects_vs_placement.png
+skills_vs_placement.png
+top_placement_correlations.png

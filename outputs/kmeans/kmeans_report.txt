@@ -1,0 +1,51 @@
+K-MEANS CLUSTERING REPORT
+=======================================================
+
+Dataset Shape: (50000, 33)
+Number of Features Used: 20
+Best K: 2
+Best Silhouette Score: 0.3451
+
+Features Used:
+- SGPA_Sem1
+- SGPA_Sem2
+- SGPA_Sem3
+- SGPA_Sem4
+- SGPA_Sem5
+- SGPA_Sem6
+- SGPA_Sem7
+- SGPA_Sem8
+- CGPA
+- AttendancePercent
+- Internships
+- Projects
+- Workshops
+- Certifications
+- Publications
+- AptitudeTestScore
+- SoftSkillsRating
+- CodingTestScore
+- MockInterviewScore
+- ExtraCurricular
+
+Silhouette Scores:
+K=2: 0.3451
+K=3: 0.2713
+K=4: 0.2428
+K=5: 0.2307
+K=6: 0.2020
+K=7: 0.1855
+K=8: 0.1657
+K=9: 0.1640
+K=10: 0.1670
+
+Cluster Sizes:
+Cluster 0: 25242 students
+Cluster 1: 24758 students
+
+Placement Rate by Cluster:
+Cluster 0: 98.11% placed
+Cluster 1: 32.68% placed
+
+PCA Visualization:
+The K-Means clusters were projected onto two principal components for visualization.

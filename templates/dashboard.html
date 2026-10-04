@@ -1,0 +1,279 @@
+{% extends "base.html" %}
+
+{% block title %}
+Dashboard | Placement Prediction
+{% endblock %}
+
+
+{% block content %}
+
+<div class="page-heading">
+
+    <div class="eyebrow">
+        PLACEMENT PREDICT EDA
+    </div>
+
+    <h1>
+        Dashboard
+    </h1>
+
+    <p>
+        Machine Learning analysis and placement prediction system.
+    </p>
+
+</div>
+
+
+<!-- STATISTICS -->
+
+<div class="stats-grid">
+
+    <div class="stat-card">
+
+        <div class="stat-icon blue">
+            <i class="fa-solid fa-users"></i>
+        </div>
+
+        <div>
+
+            <h2>
+                {{ stats.records }}
+            </h2>
+
+            <p>
+                Total Students
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-icon green">
+            <i class="fa-solid fa-table-columns"></i>
+        </div>
+
+        <div>
+
+            <h2>
+                {{ stats.features }}
+            </h2>
+
+            <p>
+                Features
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-icon orange">
+            <i class="fa-solid fa-chart-column"></i>
+        </div>
+
+        <div>
+
+            <h2>
+                {{ stats.plots }}
+            </h2>
+
+            <p>
+                Generated Plots
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-icon purple">
+            <i class="fa-solid fa-brain"></i>
+        </div>
+
+        <div>
+
+            <h2>
+                10+
+            </h2>
+
+            <p>
+                ML Techniques
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- OVERVIEW -->
+
+<div class="content-card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <h2>
+            Project Overview
+        </h2>
+
+    </div>
+
+
+    <p>
+        <strong>PlacementPredict EDA</strong> is a machine-learning
+        project designed to analyze student academic, technical
+        and personal attributes and understand their relationship
+        with placement outcomes.
+    </p>
+
+
+    <p>
+        The project includes data preprocessing, exploratory data
+        analysis, feature engineering, regression, classification,
+        clustering, dimensionality reduction and anomaly detection.
+    </p>
+
+</div>
+
+
+<!-- QUICK ACCESS -->
+
+<div class="section-heading">
+
+    <h2>
+        Quick Access
+    </h2>
+
+</div>
+
+
+<div class="quick-grid">
+
+
+    <a href="/eda" class="quick-card">
+
+        <i class="fa-solid fa-chart-column"></i>
+
+        <div>
+
+            <h3>
+                EDA Overview
+            </h3>
+
+            <p>
+                Explore distributions, correlations and patterns.
+            </p>
+
+        </div>
+
+    </a>
+
+
+    <a href="/linear-regression" class="quick-card">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <div>
+
+            <h3>
+                Linear Regression
+            </h3>
+
+            <p>
+                Understand regression and prediction results.
+            </p>
+
+        </div>
+
+    </a>
+
+
+    <a href="/kmeans" class="quick-card">
+
+        <i class="fa-solid fa-circle-nodes"></i>
+
+        <div>
+
+            <h3>
+                K-Means
+            </h3>
+
+            <p>
+                Discover student groups using clustering.
+            </p>
+
+        </div>
+
+    </a>
+
+
+    <a href="/pca" class="quick-card">
+
+        <i class="fa-solid fa-compress"></i>
+
+        <div>
+
+            <h3>
+                PCA
+            </h3>
+
+            <p>
+                Reduce high-dimensional student data.
+            </p>
+
+        </div>
+
+    </a>
+
+
+    <a href="/anomaly" class="quick-card">
+
+        <i class="fa-solid fa-triangle-exclamation"></i>
+
+        <div>
+
+            <h3>
+                Anomaly Detection
+            </h3>
+
+            <p>
+                Identify unusual student records.
+            </p>
+
+        </div>
+
+    </a>
+
+
+    <a href="/model-evaluation" class="quick-card">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <div>
+
+            <h3>
+                Model Evaluation
+            </h3>
+
+            <p>
+                Compare machine-learning performance.
+            </p>
+
+        </div>
+
+    </a>
+
+</div>
+
+
+{% endblock %}

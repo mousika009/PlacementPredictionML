@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}K-Means Clustering | PlacementPredict{% endblock %}
+{% block content %}
+<div class="page-heading">
+    <div>
+        <span class="eyebrow">PLACEMENT PREDICT EDA</span>
+        <h2>K-Means Clustering</h2>
+        <p>Unsupervised grouping of students into clusters.</p>
+    </div>
+</div>
+
+<section class="card">
+    <div class="card-title"><i class="fa-solid fa-chart-line"></i><h3>Analysis</h3></div>
+    <p>K-Means groups students according to similarity in their selected numeric features.</p>
+
+    <div class="image-grid"><div class="image-card"><img src="{{ url_for("output_file", folder="kmeans", filename="kmeans_silhouette_scores.png") }}" alt="kmeans_silhouette_scores.png"><div>kmeans_silhouette_scores.png</div></div><div class="image-card"><img src="{{ url_for("output_file", folder="kmeans", filename="kmeans_clusters.png") }}" alt="kmeans_clusters.png"><div>kmeans_clusters.png</div></div></div>
+</section>
+
+
+{% endblock %}

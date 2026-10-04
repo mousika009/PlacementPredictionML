@@ -1,0 +1,31 @@
+DECISION TREE CLASSIFICATION REPORT
+==================================================
+
+Dataset Shape: (50000, 32)
+Training Records: 40000
+Testing Records: 10000
+
+Features Used:
+- CGPA
+- AttendancePercent
+- Internships
+- Projects
+- Workshops
+- Certifications
+- AptitudeTestScore
+- SoftSkillsRating
+- CodingTestScore
+- MockInterviewScore
+
+Model Parameters:
+Criterion: gini
+Maximum Depth: 5
+Minimum Samples Split: 10
+Minimum Samples Leaf: 5
+
+Actual Tree Depth: 5
+Leaf Nodes: 29
+Total Nodes: 57
+
+Accuracy: 0.8969
+Accuracy Percentage: 89.69%

@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} | Placement Prediction{% endblock %}
+
+{% block content %}
+
+<div class="page-heading">
+    <div class="eyebrow">PLACEMENT PREDICT • ML PIPELINE</div>
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+</div>
+
+<section class="content-card">
+    <div class="card-title">
+        <i class="fa-solid fa-circle-info"></i>
+        <h2>What is {{ title }}?</h2>
+    </div>
+    <p class="theory-text">{{ theory }}</p>
+</section>
+
+<section class="content-card">
+    <div class="card-title">
+        <i class="fa-solid fa-bullseye"></i>
+        <h2>Why is it used in this project?</h2>
+    </div>
+    <p class="theory-text">{{ purpose }}</p>
+</section>
+
+{% if formula %}
+<section class="formula-card">
+    <div class="card-title">
+        <i class="fa-solid fa-square-root-variable"></i>
+        <h2>Formula / Method</h2>
+    </div>
+    <div class="formula">{{ formula }}</div>
+</section>
+{% endif %}
+
+<section class="content-card result-card">
+    <div class="card-title">
+        <i class="fa-solid fa-chart-line"></i>
+        <h2>Result / Output</h2>
+    </div>
+    <p class="result-summary">{{ result }}</p>
+
+    {% if metrics %}
+    <div class="metric-grid">
+        {% for metric in metrics %}
+        <div class="metric-card">
+            <span>{{ metric.label }}</span>
+            <strong>{{ metric.value }}</strong>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if report %}
+    <details class="report-details">
+        <summary>View detailed analysis report</summary>
+        <pre class="report-box">{{ report }}</pre>
+    </details>
+    {% endif %}
+</section>
+
+<section class="content-card">
+    <div class="card-title">
+        <i class="fa-solid fa-images"></i>
+        <h2>Visualizations</h2>
+    </div>
+
+    {% if images %}
+    <div class="image-grid">
+        {% for image in images %}
+        <div class="image-card">
+            <div class="image-header">
+                <span>{{ image.name }}</span>
+            </div>
+            <img src="{{ image.url }}" alt="{{ image.name }}" loading="lazy">
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="no-output">
+        <i class="fa-regular fa-image"></i>
+        <h3>No visualization available</h3>
+        <p>This page has no generated image output yet.</p>
+    </div>
+    {% endif %}
+</section>
+
+<section class="content-card interpretation-card">
+    <div class="card-title">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h2>Interpretation</h2>
+    </div>
+    <p>{{ interpretation }}</p>
+</section>
+
+{% endblock %}

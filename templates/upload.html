@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Upload Dataset | PlacementPredict{% endblock %}
+{% block content %}
+<div class="page-heading"><div><span class="eyebrow">DATA MANAGEMENT</span><h2>Upload Dataset</h2><p>Upload a CSV file to replace the working placement dataset.</p></div></div>
+<section class="card">
+<form method="post" enctype="multipart/form-data" class="upload-box">
+    <i class="fa-solid fa-cloud-arrow-up"></i>
+    <h3>Select CSV file</h3>
+    <input type="file" name="file" accept=".csv" required>
+    <button class="primary-btn" type="submit">Upload Dataset</button>
+</form>
+</section>
+{% endblock %}

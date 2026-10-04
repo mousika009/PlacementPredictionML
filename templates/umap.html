@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}UMAP | PlacementPredict{% endblock %}
+{% block content %}
+<div class="page-heading">
+    <div>
+        <span class="eyebrow">PLACEMENT PREDICT EDA</span>
+        <h2>UMAP</h2>
+        <p>Nonlinear dimensionality reduction and visualization.</p>
+    </div>
+</div>
+
+<section class="card">
+    <div class="card-title"><i class="fa-solid fa-chart-line"></i><h3>Analysis</h3></div>
+    <p>UMAP represents high-dimensional student records in a lower-dimensional space while preserving useful neighborhood structure.</p>
+
+    <div class="image-grid"><div class="image-card"><img src="{{ url_for("output_file", folder="umap", filename="umap_2d_projection.png") }}" alt="umap_2d_projection.png"><div>umap_2d_projection.png</div></div></div>
+</section>
+
+
+{% endblock %}

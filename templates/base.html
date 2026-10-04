@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block title %}
+        Placement Prediction Dashboard
+        {% endblock %}
+    </title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+<div class="app-layout">
+
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <div>
+                <div class="brand-name">
+                    PlacementPredict
+                </div>
+
+                <div class="brand-subtitle">
+                    EDA & ML Dashboard
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- CORE -->
+
+        <div class="nav-section">
+
+            <div class="nav-title">
+                CORE PAGES
+            </div>
+
+            <a href="/"
+               class="nav-item {% if request.path == '/' %}active{% endif %}">
+
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="/load"
+               class="nav-item {% if request.path == '/load' %}active{% endif %}">
+
+                <i class="fa-solid fa-database"></i>
+                <span>Dataset Summary</span>
+
+            </a>
+
+
+            <a href="/eda"
+               class="nav-item {% if request.path == '/eda' %}active{% endif %}">
+
+                <i class="fa-solid fa-chart-column"></i>
+                <span>EDA Overview</span>
+
+            </a>
+
+
+            <a href="/data-quality"
+               class="nav-item {% if request.path == '/data-quality' %}active{% endif %}">
+
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Data Quality</span>
+
+            </a>
+
+        </div>
+
+
+        <!-- ML PIPELINE -->
+
+        <div class="nav-section">
+
+            <div class="nav-title">
+                MODEL PIPELINE
+            </div>
+
+
+            <a href="/feature-engineering"
+               class="nav-item {% if request.path == '/feature-engineering' %}active{% endif %}">
+
+                <i class="fa-solid fa-gears"></i>
+                <span>Feature Engineering</span>
+
+            </a>
+
+
+            <a href="/feature-encoding"
+               class="nav-item {% if request.path == '/feature-encoding' %}active{% endif %}">
+
+                <i class="fa-solid fa-code"></i>
+                <span>Feature Encoding</span>
+
+            </a>
+
+
+            <a href="/linear-regression"
+               class="nav-item {% if request.path == '/linear-regression' %}active{% endif %}">
+
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Linear Regression</span>
+
+            </a>
+
+
+            <a href="/logistic-regression"
+               class="nav-item {% if request.path == '/logistic-regression' %}active{% endif %}">
+
+                <i class="fa-solid fa-chart-area"></i>
+                <span>Logistic Regression</span>
+
+            </a>
+
+
+            <a href="/decision-tree"
+               class="nav-item {% if request.path == '/decision-tree' %}active{% endif %}">
+
+                <i class="fa-solid fa-tree"></i>
+                <span>Decision Tree</span>
+
+            </a>
+
+
+            <a href="/kmeans"
+               class="nav-item {% if request.path == '/kmeans' %}active{% endif %}">
+
+                <i class="fa-solid fa-circle-nodes"></i>
+                <span>K-Means</span>
+
+            </a>
+
+
+            <a href="/dbscan"
+               class="nav-item {% if request.path == '/dbscan' %}active{% endif %}">
+
+                <i class="fa-solid fa-layer-group"></i>
+                <span>DBSCAN</span>
+
+            </a>
+
+
+            <a href="/pca"
+               class="nav-item {% if request.path == '/pca' %}active{% endif %}">
+
+                <i class="fa-solid fa-compress"></i>
+                <span>PCA</span>
+
+            </a>
+
+
+            <a href="/tsne"
+               class="nav-item {% if request.path == '/tsne' %}active{% endif %}">
+
+                <i class="fa-solid fa-project-diagram"></i>
+                <span>t-SNE</span>
+
+            </a>
+
+
+            <a href="/umap"
+               class="nav-item {% if request.path == '/umap' %}active{% endif %}">
+
+                <i class="fa-solid fa-bezier-curve"></i>
+                <span>UMAP</span>
+
+            </a>
+
+
+            <a href="/anomaly"
+               class="nav-item {% if request.path == '/anomaly' %}active{% endif %}">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>Anomaly Detection</span>
+
+            </a>
+
+
+            <a href="/model-training"
+               class="nav-item {% if request.path == '/model-training' %}active{% endif %}">
+
+                <i class="fa-solid fa-brain"></i>
+                <span>Model Training</span>
+
+            </a>
+
+
+            <a href="/model-evaluation"
+               class="nav-item {% if request.path == '/model-evaluation' %}active{% endif %}">
+
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Model Evaluation</span>
+
+            </a>
+
+        </div>
+
+
+        <!-- ACTIONS -->
+
+        <div class="nav-section">
+
+            <div class="nav-title">
+                ACTIONS & INFO
+            </div>
+
+
+            <a href="/predict"
+               class="nav-item {% if request.path == '/predict' %}active{% endif %}">
+
+                <i class="fa-solid fa-crosshairs"></i>
+                <span>Predict Student</span>
+
+            </a>
+
+
+            <a href="/students"
+               class="nav-item {% if request.path == '/students' %}active{% endif %}">
+
+                <i class="fa-solid fa-users"></i>
+                <span>Student Profiles</span>
+
+            </a>
+
+
+            <a href="/upload"
+               class="nav-item {% if request.path == '/upload' %}active{% endif %}">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <span>Upload Dataset</span>
+
+            </a>
+
+
+            <a href="/about"
+               class="nav-item {% if request.path == '/about' %}active{% endif %}">
+
+                <i class="fa-solid fa-circle-info"></i>
+                <span>About Project</span>
+
+            </a>
+
+        </div>
+
+
+        <div class="system-status">
+
+            <span class="status-dot"></span>
+
+            <span>System Ready</span>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
+
+    <div class="main-area">
+
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div>
+
+                <h1>
+                    Placement Prediction Dashboard
+                </h1>
+
+                <p>
+                    Student Placement Prediction using Machine Learning
+                </p>
+
+            </div>
+
+
+            <div class="live-status">
+
+                <span class="live-dot"></span>
+
+                Live Dashboard
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <main class="page-content">
+
+            {% block content %}
+            {% endblock %}
+
+        </main>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
